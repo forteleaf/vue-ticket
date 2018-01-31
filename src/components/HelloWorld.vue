@@ -80,7 +80,8 @@
         </a>
       </li>
     </ul>
-  </div>
+   <button v-on:click="counter">링크 1</button>
+   </div>
 </template>
 
 <script>
@@ -88,8 +89,13 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to 5our Vue.js App'
     }
+  },
+  methods: {
+    counter: function(event) {
+      console.log('옷!dddd!')
+    },
   }
 }
 </script>
